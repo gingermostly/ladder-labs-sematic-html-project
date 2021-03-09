@@ -1,0 +1,25 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+.nav-bar img {
+    display: flex;
+    align-self: flex-start;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow; 
+    list-style: none;
+}
+
+.nav-bar ul li {
+    margin: 0px 20px 0px 20px;
+}
+
+
+

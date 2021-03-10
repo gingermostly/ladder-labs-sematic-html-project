@@ -22,15 +22,18 @@
         </nav>
         <main class='container'>
             <!-- top slider content box -->
-            <section>
-                <h1>Title for slider box</h1>
-                <h2>Subtitle for slider box</h2>
-                <button>GET IN TOUCH BUTTON</button>
+            <section class='section-container'>
+                <img src='images\slide01.jpg'>
+                <div id='slide-overlay-container'>
+                    <h1 id='slider-title'>Mobile App Development</h1>
+                    <span class='section-description'>Since our establishment we have been delivering high-quality and sustainable software solutions for corporate purposes of worldwide businesses.</span>
+                    <button id='slide-btn'>GET IN TOUCH</button>
+                </div>
             </section>
         <!-- services section -->
         <section>
             <h1>See All Services</h1>
-            <button>ALL SERVICES</button>
+            <button id='services-btn'>ALL SERVICES</button>
         </section>
         <!-- corporate solutions section -->
         <section>
@@ -49,8 +52,10 @@
         </section>
         <!-- Latest Projects section -->
         <section>
-            <h1>Latest Projects</h1>
-            <p>In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</p>
+            <div class='container'>
+                <h1 id='projects-title'>Latest Projects</h1>
+                <span id='projects-description'>In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</span>
+            </div>
             <nav class='nav-projects'>
                 <ul class='nav-list-projects'>
                     <li>ALL</li>
@@ -60,6 +65,16 @@
                     <li>UX AND DESIGN</li>
                 </ul>
             </nav>
+            <div class='container-grid'>
+                <img src='images\projects01.jpg'>
+                <img src='images\projects02.jpg'>
+                <img src='images\projects03.jpg'>
+                <img src='images\projects04.jpg'>
+                <img src='images\projects05.jpg'>
+                <img src='images\projects06.jpg'>
+                <img src='images\projects07.jpg'>
+                <img src='images\projects08.jpg'>
+            </div>
         </section>
         <!-- Meet the team section -->
         <section>
@@ -74,14 +89,12 @@
             </ul>
 
         <section>
-            <h1>Meet The Team</h1>
-                <nav>
-                  <ul>
-                    <li>Ryan Wilson Director of Production</li>
-                    <li>Jill Peterson UI Designer</li>
-                    <li>Sam Robinson Senior Developer</li>
-                    <li>Mary Lee Software Developer</li>
-                  </ul>  
+            <h1 class='section-title'>Meet The Team</h1>
+                <nav class='container-grid'>
+                  <img src='images\team-01-Ryan-Wilson.jpg'>
+                  <img src='images\team-02-Jill-Peterson.jpg'>
+                  <img src='images\team-03-Sam-Robinson.jpg'>
+                  <img src='images\team-04-Mary-Lee.jpg'>
                 </nav>
         </section>
         <!-- Get More With Us section -->

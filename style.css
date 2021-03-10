@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 body {
     margin: 0px;
     height: 100vh;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .container {
@@ -13,21 +16,23 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
 }
 
 .nav-top {
     position: fixed;
+    z-index: 2;
     top: 0px;
     background-color: #fff;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .nav-top img {
     display: flex;
     align-self: flex-start;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 50px;
+    margin-bottom: 20px;
 }
 
 .nav-list-top {
@@ -35,13 +40,15 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-right: 50px;
 }
 
 .nav-projects {
+    color: rgb(145, 145, 145);
     justify-content: center;
-    background-color: cadetblue;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-list-projects {
@@ -51,5 +58,99 @@ body {
 
 .nav-list-top li, .nav-list-projects li {
     margin: 0px 20px 0px 20px;
+    cursor: pointer;
 }
 
+.nav-list-projects li:not(:last-child):after {
+    padding-left: 25px;
+    font-weight: 100;
+    content: "|";
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slide-overlay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#slide-btn, #services-btn {
+    background-color: rgb(121, 80, 235);
+    width: 180px;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    outline-style: none;
+    z-index: 1;
+    border-style: none;
+}
+
+#slide-btn:after, #services-btn:after {
+    background: #000;
+    color: #fff;
+    content: '';
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    display: block;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+#slide-btn:hover, #services-btn:hover {
+    color: #fff;
+}
+
+#slide-btn:hover:after, #services-btn:hover:after {
+    width: 100%;
+}
+
+#slider-title {
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 16px;
+    text-align: center;
+    max-width: 55%;
+    margin-bottom: 30px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.container-grid img {
+    cursor: pointer;
+}
+
+#projects-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#projects-description {
+    font-size: 16px;
+    text-align: center;
+    max-width: 27%;
+    margin-bottom: 15px;
+}

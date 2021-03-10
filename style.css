@@ -154,3 +154,11 @@ body {
     max-width: 27%;
     margin-bottom: 15px;
 }
+
+#team-nav img {
+    filter: grayscale(100%);
+}
+
+#team-nav img:hover {
+    filter: none;
+}

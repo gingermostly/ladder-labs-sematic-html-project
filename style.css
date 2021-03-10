@@ -22,6 +22,10 @@ body {
     position: fixed;
     z-index: 2;
     top: 0px;
+    color: #151515;
+    font-size: 14px;
+    letter-spacing: .05em;
+    font-weight: 500;
     background-color: #fff;
     width: 100%;
     margin-bottom: 20px;

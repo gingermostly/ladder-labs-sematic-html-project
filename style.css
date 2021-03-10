@@ -45,7 +45,6 @@ body {
 
 .nav-projects {
     justify-content: center;
-    background-color: cadetblue;
 }
 
 .nav-list-projects {
@@ -62,7 +61,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: chartreuse;
 }
 
 #slide-overlay-container {
@@ -94,4 +92,11 @@ body {
     text-align: center;
     max-width: 55%;
     margin-bottom: 30px;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
 }

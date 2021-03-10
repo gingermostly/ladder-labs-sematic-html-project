@@ -85,6 +85,7 @@ body {
 .section-title {
     font-size: 60px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .section-description {
@@ -94,9 +95,13 @@ body {
     margin-bottom: 30px;
 }
 
-#projects-container {
+.container-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2em;
     row-gap: 2em;
+}
+
+.container-grid img {
+    cursor: pointer;
 }

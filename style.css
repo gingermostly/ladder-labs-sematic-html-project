@@ -82,7 +82,7 @@ body {
     border-style: none;
 }
 
-.section-title {
+#slider-title {
     font-size: 60px;
     margin-bottom: 30px;
     text-align: center;
@@ -104,4 +104,10 @@ body {
 
 .container-grid img {
     cursor: pointer;
+}
+
+#projects-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
 }

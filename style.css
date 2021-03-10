@@ -81,7 +81,7 @@ body {
     z-index: 1;
 }
 
-#slide-btn {
+#slide-btn, #services-btn {
     background-color: rgb(121, 80, 235);
     width: 180px;
     color: #fff;
@@ -95,7 +95,7 @@ body {
     border-style: none;
 }
 
-#slide-btn:after {
+#slide-btn:after, #services-btn:after {
     background: #000;
     color: #fff;
     content: '';
@@ -110,11 +110,11 @@ body {
     z-index: -1;
 }
 
-#slide-btn:hover {
+#slide-btn:hover, #services-btn:hover {
     color: #fff;
 }
 
-#slide-btn:hover:after {
+#slide-btn:hover:after, #services-btn:hover:after {
     width: 100%;
 }
 

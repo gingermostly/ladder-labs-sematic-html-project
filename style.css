@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
 }
 
 .nav-top {
@@ -25,13 +24,15 @@ body {
     top: 0px;
     background-color: #fff;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .nav-top img {
     display: flex;
     align-self: flex-start;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 50px;
+    margin-bottom: 20px;
 }
 
 .nav-list-top {
@@ -39,7 +40,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-right: 50px;
 }
 
@@ -65,8 +66,6 @@ body {
     font-weight: 100;
     content: "|";
 }
-
-
 
 .section-container {
     display: flex;

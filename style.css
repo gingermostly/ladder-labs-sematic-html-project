@@ -44,7 +44,10 @@ body {
 }
 
 .nav-projects {
+    color: rgb(145, 145, 145);
     justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-list-projects {
@@ -56,6 +59,14 @@ body {
     margin: 0px 20px 0px 20px;
     cursor: pointer;
 }
+
+.nav-list-projects li:not(:last-child):after {
+    padding-left: 25px;
+    font-weight: 100;
+    content: "|";
+}
+
+
 
 .section-container {
     display: flex;
@@ -110,4 +121,11 @@ body {
     font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+#projects-description {
+    font-size: 16px;
+    text-align: center;
+    max-width: 27%;
+    margin-bottom: 15px;
 }

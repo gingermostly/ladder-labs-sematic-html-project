@@ -88,8 +88,34 @@ body {
     font-weight: 600;
     padding: 20px 20px 20px 20px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
     outline-style: none;
+    z-index: 1;
     border-style: none;
+}
+
+#slide-btn:after {
+    background: #000;
+    color: #fff;
+    content: '';
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    display: block;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+#slide-btn:hover {
+    color: #fff;
+}
+
+#slide-btn:hover:after {
+    width: 100%;
 }
 
 #slider-title {

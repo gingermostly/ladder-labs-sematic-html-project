@@ -25,18 +25,26 @@ body {
     position: fixed;
     z-index: 2;
     top: 0px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: rgb(255, 255, 255);
     width: 100%;
     margin-bottom: 20px;
 }
 
-.nav-top img {
+#nav-logo {
     display: flex;
     align-self: flex-start;
     padding-top: 20px;
     padding-left: 50px;
     margin-bottom: 20px;
+}
+
+svg {
+    margin-right: 15px;
+}
+
+svg:hover {
+    fill: rgb(121, 80, 235);
 }
 
 .nav-list-top {
@@ -47,6 +55,8 @@ body {
     padding-top: 20px;
     padding-right: 50px;
 }
+
+
 
 .nav-projects {
     color: rgb(145, 145, 145);
@@ -89,7 +99,7 @@ body {
 }
 
 #slide-btn, #services-btn {
-    background-color: rgb(121, 80, 235);
+    background-color:rgb(121, 80, 235);
     width: 180px;
     color: #fff;
     padding: 20px 20px 20px 20px;
@@ -186,10 +196,6 @@ body {
 
 #call-box {
     grid-column-start: 2;
-}
-
-#cloud-box {
-
 }
 
 #projects-title {

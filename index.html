@@ -7,7 +7,7 @@
     </head>
     <body>
         <nav class='nav-top'>
-            <img src='images\dreamsoft-logo.png' alt="DreamSoft Logo">
+            <img id='nav-logo' src='images\dreamsoft-logo.png' alt="DreamSoft Logo">
             <ul class='nav-list-top'>
                 <li>Home</li>
                 <li>About Us</li>
@@ -15,9 +15,15 @@
                 <li>Pricing</li> 
                 <li>Blog</li> 
                 <li>Contact Us</li> 
-                <li>Pages</li> 
-                <li>SEARCH BUTTON</li> 
-                <li>SHARE BUTTON</li>                      
+                <li>Pages</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                    </svg>
+                </li>                 
             </ul>
         </nav>
         <main class='container'>
@@ -31,24 +37,29 @@
                 </div>
             </section>
         <!-- services section -->
-        <section>
-            <h1>See All Services</h1>
-            <button id='services-btn'>ALL SERVICES</button>
-        </section>
-        <!-- corporate solutions section -->
-        <section>
-            <h1>CORPORATE SOLUTIONS</h1>
-            <h2>Need specific software for your company? We are ready to develop it!</h2>
-        </section>
-        <!-- call center solutions section -->
-        <section>
-            <h1>CALL CENTER SOLUTIONS</h1>
-            <h2>Our experts provide custom products of any complexity for call centers.</h2>
-        </section>
-        <!-- cloud development section -->
-        <section>
-            <h1>CLOUD DEVELOPMENT</h1>
-            <h2>We can also offer you reliable cloud development solutions.</h2>
+        <section class='section-container'>
+            <img src='images\ipad.jpg'>
+            <div id='services-container'>
+                <div class='box' id='services-box'>
+                    <h1>See All Services</h1>
+                    <button id='services-btn'>ALL SERVICES</button>
+                </div>
+        <!-- corporate solutions box-->
+            <div class='box' id='corporate-box'>
+                <h1>CORPORATE SOLUTIONS</h1>
+                <h2>Need specific software for your company? We are ready to develop it!</h2>
+            </div>
+        <!-- call center solutions box-->
+            <div class='box' id='call-box'>
+                <h1>CALL CENTER SOLUTIONS</h1>
+                <h2>Our experts provide custom products of any complexity for call centers.</h2>
+            </div>
+        <!-- cloud development box -->
+                <div class='box' id='cloud-box'>
+                    <h1>CLOUD DEVELOPMENT</h1>
+                    <h2>We can also offer you reliable cloud development solutions.</h2>
+                </div>
+            </div>
         </section>
         <!-- Latest Projects section -->
         <section>
@@ -90,7 +101,7 @@
 
         <section>
             <h1 class='section-title'>Meet The Team</h1>
-                <nav class='container-grid'>
+                <nav class='container-grid' id='team-nav'>
                   <img src='images\team-01-Ryan-Wilson.jpg'>
                   <img src='images\team-02-Jill-Peterson.jpg'>
                   <img src='images\team-03-Sam-Robinson.jpg'>

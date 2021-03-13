@@ -1,1 +1,1 @@
-# ladder-labs-sematic-html-project
+# ladder-labs-semantic-html-project

@@ -10,51 +10,67 @@
     <body>
         
         <nav class='nav-top'>
-            <img src='images\dreamsoft-logo.png' alt="DreamSoft Logo">
+            <img id='nav-logo' src='images\dreamsoft-logo.png' alt="DreamSoft Logo">
             <ul class='nav-list-top'>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#gallery">Gallery</a></li> 
-                <li><a href="#pricing">Pricing</a></li> 
-                <li><a href="#blog">Blog</a></li> 
-                <li><a href="#contact">Contact Us</a></li> 
-                <li><a href="#pages">Pages</a></li> 
-                <li><a href="#search-button">SEARCH BUTTON</a></li> 
-                <li><a href="#share-button">SHARE BUTTON</a></li>                      
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Gallery</li> 
+                <li>Pricing</li> 
+                <li>Blog</li> 
+                <li>Contact Us</li> 
+                <li>Pages</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                    </svg>
+                </li>                 
             </ul>
         </nav>
         <main class='container'>
             <!-- top slider content box -->
-            <section>
-                <h1>Title for slider box</h1>
-                <h2>Subtitle for slider box</h2>
-                <button>GET IN TOUCH BUTTON</button>
+            <section class='section-container'>
+                <img src='images\slide01.jpg'>
+                <div id='slide-overlay-container'>
+                    <h1 id='slider-title'>Mobile App Development</h1>
+                    <span class='section-description'>Since our establishment we have been delivering high-quality and sustainable software solutions for corporate purposes of worldwide businesses.</span>
+                    <button id='slide-btn'>GET IN TOUCH</button>
+                </div>
             </section>
         <!-- services section -->
-        <section>
-            <h1>See All Services</h1>
-            <button>ALL SERVICES</button>
-        </section>
-        <!-- corporate solutions section -->
-        <section>
-            <h1>CORPORATE SOLUTIONS</h1>
-            <h2>Need specific software for your company? We are ready to develop it!</h2>
-        </section>
-        <!-- call center solutions section -->
-        <section>
-            <h1>CALL CENTER SOLUTIONS</h1>
-            <h2>Our experts provide custom products of any complexity for call centers.</h2>
-        </section>
-        <!-- cloud development section -->
-        <section>
-            <h1>CLOUD DEVELOPMENT</h1>
-            <h2>We can also offer you reliable cloud development solutions.</h2>
+        <section class='section-container'>
+            <img src='images\ipad.jpg'>
+            <div id='services-container'>
+                <div class='box' id='services-box'>
+                    <h1>See All Services</h1>
+                    <button id='services-btn'>ALL SERVICES</button>
+                </div>
+        <!-- corporate solutions box-->
+            <div class='box' id='corporate-box'>
+                <h1>CORPORATE SOLUTIONS</h1>
+                <h2>Need specific software for your company? We are ready to develop it!</h2>
+            </div>
+        <!-- call center solutions box-->
+            <div class='box' id='call-box'>
+                <h1>CALL CENTER SOLUTIONS</h1>
+                <h2>Our experts provide custom products of any complexity for call centers.</h2>
+            </div>
+        <!-- cloud development box -->
+                <div class='box' id='cloud-box'>
+                    <h1>CLOUD DEVELOPMENT</h1>
+                    <h2>We can also offer you reliable cloud development solutions.</h2>
+                </div>
+            </div>
         </section>
         <!-- Latest Projects section -->
         <section>
-            <h1>Latest Projects</h1>
-            <p>In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</p>
-            <nav class='nav-projects'id="">
+            <div class='container'>
+                <h1 id='projects-title'>Latest Projects</h1>
+                <span id='projects-description'>In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</span>
+            </div>
+            <nav class='nav-projects'>
                 <ul class='nav-list-projects'>
                     <li>ALL</li>
                     <li>MOBILE APPS</li>
@@ -63,6 +79,16 @@
                     <li>UX AND DESIGN</li>
                 </ul>
             </nav>
+            <div class='container-grid'>
+                <img src='images\projects01.jpg'>
+                <img src='images\projects02.jpg'>
+                <img src='images\projects03.jpg'>
+                <img src='images\projects04.jpg'>
+                <img src='images\projects05.jpg'>
+                <img src='images\projects06.jpg'>
+                <img src='images\projects07.jpg'>
+                <img src='images\projects08.jpg'>
+            </div>
         </section>
         <!-- Meet the team section -->
         <section>
@@ -77,14 +103,12 @@
             </ul>
 
         <section>
-            <h1>Meet The Team</h1>
-                <nav>
-                  <ul>
-                    <li>Ryan Wilson Director of Production</li>
-                    <li>Jill Peterson UI Designer</li>
-                    <li>Sam Robinson Senior Developer</li>
-                    <li>Mary Lee Software Developer</li>
-                  </ul>  
+            <h1 class='section-title'>Meet The Team</h1>
+                <nav class='container-grid' id='team-nav'>
+                  <img src='images\team-01-Ryan-Wilson.jpg'>
+                  <img src='images\team-02-Jill-Peterson.jpg'>
+                  <img src='images\team-03-Sam-Robinson.jpg'>
+                  <img src='images\team-04-Mary-Lee.jpg'>
                 </nav>
         </section>
         <!-- Get More With Us section -->

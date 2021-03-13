@@ -18,7 +18,7 @@ body {
 .nav-top, .nav-projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-top {
@@ -55,8 +55,6 @@ svg:hover {
     padding-top: 20px;
     padding-right: 50px;
 }
-
-
 
 .nav-projects {
     color: rgb(145, 145, 145);
@@ -209,6 +207,42 @@ svg:hover {
     text-align: center;
     max-width: 30%;
     margin-bottom: 15px;
+}
+
+.team-wrapper {
+    display: flex;
+    align-items: flex-end;
+    max-height: 420px;
+}
+
+.team-nav-overlay h1 {
+    color: rgb(255, 255, 255);
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.team-nav-overlay {
+    position: absolute;
+    height: 100px;
+    width: 350px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.team-nav-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: skew(10deg);
 }
 
 #team-nav img {

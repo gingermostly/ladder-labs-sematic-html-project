@@ -240,6 +240,17 @@ svg:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transform: skew(10deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.team-nav-overlay:hover:after {
+    content: '';
+    height: 100%;
+    transform: skew(10deg) scale(1.2);
+}
+
+.team-nav-overlay:hover h1, .team-nav-overlay:hover h2 {
+    transform: translate(20px);
 }
 
 .team-nav-overlay h1, .team-nav-overlay h2 {
@@ -251,6 +262,7 @@ svg:hover {
     margin-left: 50px;
     font-size: 21px;
     font-weight: 500;
+    transition: transform 300ms ease-in-out;
 }
 
 .team-nav-overlay h2 {
@@ -260,6 +272,7 @@ svg:hover {
 .team-nav-overlay h1:hover {
     color:#a39bfa;
 }
+
 
 #team-nav img {
     filter: grayscale(100%);

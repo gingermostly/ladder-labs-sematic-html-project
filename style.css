@@ -215,23 +215,20 @@ svg:hover {
     max-height: 420px;
 }
 
-.team-nav-overlay h1 {
-    color: rgb(255, 255, 255);
-    position: relative;
-    opacity: 1;
-    z-index: 1;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
 .team-nav-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     height: 100px;
     width: 350px;
     margin-right: 100px;
     margin-bottom: 40px;
     overflow: hidden;
+}
+
+.team-nav-overlay:hover {
+    cursor: pointer;
 }
 
 .team-nav-overlay:after {
@@ -243,6 +240,25 @@ svg:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transform: skew(10deg);
+}
+
+.team-nav-overlay h1, .team-nav-overlay h2 {
+    color: rgb(255, 255, 255);
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    margin: 0px;
+    margin-left: 50px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.team-nav-overlay h2 {
+    font-size: 14px;
+}
+
+.team-nav-overlay h1:hover {
+    color:#a39bfa;
 }
 
 #team-nav img {

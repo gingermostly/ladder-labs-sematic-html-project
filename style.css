@@ -15,6 +15,11 @@ body {
     align-items: center;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .nav-top, .nav-projects {
     display: flex;
     flex-direction: row;
@@ -282,3 +287,6 @@ svg:hover {
     filter: none;
 }
 
+#client-nav {
+    cursor: pointer;
+}

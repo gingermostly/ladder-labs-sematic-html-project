@@ -289,12 +289,20 @@ svg:hover {
 
 #client-nav img {
     border: 1px solid #6c757d;
+    width: 272px;
+    height: 117px;
     margin: 20px;
     opacity: 0.3;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
 
 #client-nav img:hover {
     transform: scale(0.9);
     opacity: 1;
+}
+
+#client-nav img:after {
+    content: '';
+    outline: 1px solid black;
 }

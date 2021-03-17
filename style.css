@@ -217,6 +217,7 @@ svg:hover {
     display: flex;
     align-items: flex-end;
     max-height: 420px;
+    margin-bottom: 60px;
 }
 
 .team-nav-overlay {
@@ -327,9 +328,13 @@ svg:hover {
     margin-bottom: 0;
 }
 
+#get-more-container {
+    max-width: 420px;
+    margin-right: 50px;
+}
+
 #get-more-nav {
     display: flex;
-    align-items: flex-start;
     font-size: 32px;
     list-style: none;
     padding: 0;
@@ -345,4 +350,5 @@ svg:hover {
 
 .flex-wrapper {
     display: flex;
+    justify-content: center;
 }

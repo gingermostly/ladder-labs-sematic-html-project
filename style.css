@@ -342,6 +342,13 @@ svg:hover {
     margin-bottom: 0;
 }
 
+#get-more-container hr {
+    padding: 0;
+    margin: 0;
+    width: 512px;
+    border-top: 2px solid rgb(145, 145, 145);
+}
+
 #get-more-nav li {
     padding-right: 120px;
 }
@@ -349,6 +356,10 @@ svg:hover {
 #get-more-nav li:hover {
     color:rgb(121, 80, 235);
     cursor: pointer;
+}
+
+#get-more-nav li:after {
+    content: ' ';
 }
 #get-more-nav li:active {
     color: rgb(121, 80, 235);

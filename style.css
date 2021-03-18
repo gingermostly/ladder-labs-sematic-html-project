@@ -375,3 +375,7 @@ svg:hover {
     display: flex;
     justify-content: center;
 }
+
+#social, #customer, #usability {
+    display: none;
+}

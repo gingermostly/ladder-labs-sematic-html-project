@@ -330,7 +330,7 @@ svg:hover {
 
 #get-more-container {
     max-width: 420px;
-    margin-right: 50px;
+    margin-right: 200px;
 }
 
 #get-more-nav {
@@ -340,6 +340,18 @@ svg:hover {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#get-more-nav li {
+    padding-right: 120px;
+}
+
+#get-more-nav li:hover {
+    color:rgb(121, 80, 235);
+    cursor: pointer;
+}
+#get-more-nav li:active {
+    color: rgb(121, 80, 235);
 }
 
 #get-more-description {

@@ -151,25 +151,25 @@
         <section class='flex-wrapper'>
             <nav id='get-more-container'>
                 <h1 id='get-more-title'>Get More With Us</h1>   
-                <ul class='get-more-nav'>
-                    <li onclick="toggleDiv('apps')">01</li>
-                    <li onclick="toggleDiv('social')">02</li>
-                    <li onclick="toggleDiv('customer')">03</li>
-                    <li onclick="toggleDiv('usability')">04</li>
+                <ul id='get-more-nav'>
+                    <li><span class='selected' data-id='apps'>01</span></li>
+                    <li><span data-id='social'>02</span></li>
+                    <li><span data-id='customer'>03</span></li>
+                    <li><span data-id='usability'>04</span></li>
                 </ul>
-                <div class='show' id='apps'>
+                <div class='toggle hide' id='apps'>
                     <h2>FREE APPS</h2>
                     <p>We regularly upload new free apps to our website, which is fully accessible to our clients and subscribers. You can also find out about free apps in our blog.</p>
                 </div>
-                <div class='show' id='social'>
+                <div class='hide' id='social'>
                     <h2>GET SOCIAL</h2>
                     <p>Every app we develop has built-in social support that allows you to stay connected to your accounts on Facebook, Instagram, Twitter and other networks.</p>                   
                 </div>
-                <div class='show' id='customer'>
+                <div class='hide' id='customer'>
                     <h2>CUSTOMER SERVICE</h2>
                     <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>                   
                 </div>
-                <div class='show' id='usability'>
+                <div class='hide' id='usability'>
                     <h2>GREAT USABILITY</h2>
                     <p>All our apps are designed to have great usability in order to easily operate our applications. That is why our software has high ratings and lots of awards.</p>                   
                 </div>

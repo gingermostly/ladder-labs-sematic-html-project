@@ -4,7 +4,7 @@ body {
     margin: 0px;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    color: #151515;
+    color: rgb(21, 21, 21);
     font-size: 14px;
     letter-spacing: .05em;
 }
@@ -83,20 +83,20 @@ svg:hover {
     font-size: 18px;
 }
 
-.nav-list-projects {
+.nav-list-bar {
     display: flex;
     list-style: none;
 }
 
-.nav-list-top li, .nav-list-projects li {
+.nav-list-top li, .nav-list-bar li {
     margin: 0px 20px 0px 20px;
     cursor: pointer;
 }
 
-.nav-list-projects li {
+.nav-list-bar li {
     color:rgb(145, 145, 145);
 }
-.nav-list-projects li:not(:last-child):after {
+.nav-list-bar li:not(:last-child):after {
     padding-left: 25px;
     opacity: 50%;
     content: "|";
@@ -120,7 +120,7 @@ svg:hover {
 #slide-btn, #services-btn {
     background-color:rgb(121, 80, 235);
     width: 180px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 20px 20px 20px 20px;
     cursor: pointer;
     position: relative;
@@ -132,7 +132,7 @@ svg:hover {
 
 #slide-btn:after, #services-btn:after {
     background: #000;
-    color: #fff;
+    color: rgb(255, 255, 255);
     content: '';
     height: 100%;
     width: 0px;
@@ -146,7 +146,7 @@ svg:hover {
 }
 
 #slide-btn:hover, #services-btn:hover {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 #slide-btn:hover:after, #services-btn:hover:after {
@@ -156,6 +156,11 @@ svg:hover {
 #slider-title {
     font-size: 60px;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 42px;
     text-align: center;
 }
 
@@ -217,12 +222,6 @@ svg:hover {
     grid-column-start: 2;
 }
 
-#projects-title {
-    font-size: 40px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 #projects-description {
     font-weight: 600;
     text-align: center;
@@ -234,6 +233,7 @@ svg:hover {
     display: flex;
     align-items: flex-end;
     max-height: 420px;
+    margin-bottom: 60px;
 }
 
 .team-nav-overlay {
@@ -291,7 +291,7 @@ svg:hover {
 }
 
 .team-nav-overlay h1:hover {
-    color:#a39bfa;
+    color:rgb(163, 155, 250);
 }
 
 
@@ -312,7 +312,7 @@ svg:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #6c757d;
+    border: 1px solid rgb(108, 117, 125);
     box-sizing: border-box;
     margin: 20px;
     padding: 1px;
@@ -334,7 +334,65 @@ svg:hover {
 }
 
 .client-nav div:hover {
-    border: 1px solid #151515;
+    border: 1px solid rgb(21, 21, 21);
     opacity: 1;
     transition: all 300ms ease-in-out;
 }
+
+#get-more-title {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+#get-more-container {
+    max-width: 420px;
+    margin-right: 200px;
+}
+
+.get-more-nav {
+    display: flex;
+    font-size: 32px;
+    color: rgb(145, 145, 145);
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.get-more-nav li {
+    border-bottom: 3px solid rgb(225, 225, 225);
+}
+
+.get-more-nav li:hover {
+    color:rgb(121, 80, 235);
+    cursor: pointer;
+}
+
+.get-more-nav li:first-child {
+    color: rgb(121, 80, 235);
+    border-bottom: 3px solid rgb(121, 80, 235);
+}
+
+.get-more-nav li:not(:first-child) {
+    padding-left: 120px;
+}
+
+.get-more-nav li:active {
+    color: rgb(121, 80, 235);
+}
+
+#get-more-description {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#apps, #social, #customer, #usability {
+    display: none;
+}
+

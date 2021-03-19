@@ -3,9 +3,7 @@
     <head>
         <title>Ladder-Labs Semantic HTML Project</title>
         <meta name ='viewport' content='width=device-width, initial-scale=1'>
-        <link rel ='stylesheet' href ='style.css'>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link rel ='stylesheet' href ='style.css'>    
     </head>
     <body>
         
@@ -67,11 +65,11 @@
         <!-- Latest Projects section -->
         <section>
             <div class='container'>
-                <h1 id='projects-title'>Latest Projects</h1>
+                <h1 class='section-title'>Latest Projects</h1>
                 <span id='projects-description'>In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</span>
             </div>
             <nav class='nav-projects'>
-                <ul class='nav-list-projects'>
+                <ul class='nav-list-bar'>
                     <li>ALL</li>
                     <li>MOBILE APPS</li>
                     <li>CUSTOM SOFTWARE</li>
@@ -92,7 +90,7 @@
         </section>
         <!-- Meet the team section -->
         <section>
-            <h1>Years Of Experience</h1>
+            <h1 class='section-title'>Years Of Experience</h1>
             <h2>DreamSoft is a team of highly experienced app designers and developers creating unique software for you.</h2>
             <button>GET IN TOUCH</button>
             <ul>
@@ -151,18 +149,39 @@
                 </nav>
         </section>
         <!-- Get More With Us section -->
-        <section>
-            <h1>Get More With Us</h1>
-                <nav>
-                    <ul>
-                        <li>01</li>
-                        <li>02</li>
-                        <li>03</li>
-                        <li>04</li>
-                    </ul>
-                </nav>
+        <section class='flex-wrapper'>
+            <nav id='get-more-container'>
+                <h1 id='get-more-title'>Get More With Us</h1>   
+                <ul class='get-more-nav'>
+                    <li onclick="toggleDiv('apps')">01</li>
+                    <li onclick="toggleDiv('social')">02</li>
+                    <li onclick="toggleDiv('customer')">03</li>
+                    <li onclick="toggleDiv('usability')">04</li>
+                </ul>
+                <div class='show' id='apps'>
+                    <h2>FREE APPS</h2>
+                    <p>We regularly upload new free apps to our website, which is fully accessible to our clients and subscribers. You can also find out about free apps in our blog.</p>
+                </div>
+                <div class='show' id='social'>
+                    <h2>GET SOCIAL</h2>
+                    <p>Every app we develop has built-in social support that allows you to stay connected to your accounts on Facebook, Instagram, Twitter and other networks.</p>                   
+                </div>
+                <div class='show' id='customer'>
+                    <h2>CUSTOMER SERVICE</h2>
+                    <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>                   
+                </div>
+                <div class='show' id='usability'>
+                    <h2>GREAT USABILITY</h2>
+                    <p>All our apps are designed to have great usability in order to easily operate our applications. That is why our software has high ratings and lots of awards.</p>                   
+                </div>
                 <button>GET IN TOUCH</button>
-                <button>DOWNLOAD PRESENTATION</button>
+                <button>DOWNLOAD PRESENTATION</button>    
+            </nav>
+            <div>
+                <img src='images\phone-image-1.png'>
+                <img src='images\phone-image-2.png'>
+            </div>
+        </section>
         <!-- what people say section-->
         <section>
             <h1>What People Say</h1>
@@ -241,5 +260,6 @@
             </section>
         </main>
         <footer>2011 DreamSoft. All Rights reserved. Privacy Policy</footer>
+        <script src='script.js'></script>
     </body>
 </html>

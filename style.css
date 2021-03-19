@@ -333,7 +333,7 @@ svg:hover {
     margin-right: 200px;
 }
 
-#get-more-nav {
+.get-more-nav {
     display: flex;
     font-size: 32px;
     color: rgb(145, 145, 145);
@@ -343,25 +343,25 @@ svg:hover {
     margin-bottom: 0;
 }
 
-#get-more-nav li {
+.get-more-nav li {
     border-bottom: 3px solid rgb(225, 225, 225);
 }
 
-#get-more-nav li:hover {
+.get-more-nav li:hover {
     color:rgb(121, 80, 235);
     cursor: pointer;
 }
 
-#get-more-nav li:first-child {
+.get-more-nav li:first-child {
     color: rgb(121, 80, 235);
     border-bottom: 3px solid rgb(121, 80, 235);
 }
 
-#get-more-nav li:not(:first-child) {
+.get-more-nav li:not(:first-child) {
     padding-left: 120px;
 }
 
-#get-more-nav li:active {
+.get-more-nav li:active {
     color: rgb(121, 80, 235);
 }
 
@@ -376,6 +376,7 @@ svg:hover {
     justify-content: center;
 }
 
-#social, #customer, #usability {
+#apps, #social, #customer, #usability {
     display: none;
 }
+

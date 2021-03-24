@@ -407,3 +407,56 @@ svg:hover {
     width: 100%;
 }
 
+
+/* Latest Blog Section */
+
+#blog-post {
+    display: flex;
+    padding-left: 11em;
+    padding-right: 12em;
+    padding-top: 9em;
+}
+
+#blog-post:after {
+    content: "";
+    display: table;
+    clear: both;
+   }
+
+.heading-post {
+    position: absolute;
+    text-align: center;
+    
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: justify;
+  background-color: white;
+}
+
+.post-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+.post-text {
+ text-align: justify;
+ font-weight: lighter;
+ color: gray;
+}
+
+
+.post-title a, a:hover, a:focus, a:active {
+ text-decoration: none;
+ color: inherit;
+}
+
+.post-month {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }

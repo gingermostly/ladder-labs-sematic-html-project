@@ -457,6 +457,11 @@ svg:hover {
     font-size: 30px;
   }
 
-  .container {
-    padding: 0 10px;
+.post-number {
+  font-size: 30px;
+}
+
+
+.container {
+ padding: 0 10px;
   }

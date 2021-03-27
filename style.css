@@ -32,11 +32,11 @@ body {
 }
 
 #nav-logo {
-    display: flex;
     align-self: flex-start;
-    padding-top: 20px;
-    padding-left: 50px;
+    display: flex;    
     margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 50px;    
 }
 
 .nav-list-top {
@@ -44,20 +44,20 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    padding-top: 20px;
     padding-right: 50px;
+    padding-top: 20px;    
 }
 
-.nav-list-top li::after {
+.nav-link::after {
      content: '';
-     background: rgb(151, 74, 223);
+     background: rgb(121, 80, 235);
      display: block;
      height: 2px;
      transition: width 0.3;
      width: 0;     
  }
 
-.nav-list-top li:hover::after {
+.nav-link:hover::after {
     width: 100%;
 }
 
